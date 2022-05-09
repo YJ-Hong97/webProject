@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>내부 스타일시트</title>
+<link href = "../css/external.css" rel = "stylesheet" type = "text/css">
+<style>
+/*internal style sheet*/
+	ul{
+		/*태그선택자 실습*/
+		color: blue;
+		list-style: lower-roman;
+		border: 1px solid green;
+		padding: 10px;
+	}
+	li{
+		border: 1px solid gray;
+		padding: 10px;
+	}
+</style>
+</head>
+<body id = container>
+	<img src="../images/event.jpg" alt="시드니 오페라 하우스">
+	<h1>세계 3대 미항</h1>
+	<ul>
+	<!-- inline style sheet -->
+		<li style = "color : red;">시드니(Sydney), 호주</li>
+		<li class = "aa">리우데자네이루(Rio de Janeiro), 브라질</li>
+		<li id= "liid">나폴리(Naples), 이탈리아</li>
+	</ul>
+
+</body>
+
+</html>

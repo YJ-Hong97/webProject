@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* 외부스타일 sheet*/
+h1{
+	color: fuchsia;
+	background-color: orange;
+}
+h2{
+	color:red;
+	background-color: yellow;
+}
+ul{
+	color:purple;
+}
+*{/* 
+	margin : 0;
+	padding : 0; */
+	margin : 20px 10px 20px 20px;
+}
+.aa{
+	background-color: pink;
+}
+#liid{
+	background-color:red;
+	 
+}
+#container{
+	border : dotted;
+	margin: 0 auto;
+}
+h1,h2{
+	text-align : center;
+}

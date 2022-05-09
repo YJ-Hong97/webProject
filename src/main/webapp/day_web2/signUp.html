@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+	span{width:150px; display:inline-block;}
+</style>
+<body>
+<form action = "privateCheck.jsp" onsubmit = "return checkPW();">
+<fieldset>
+<legend>로그인 정보</legend>
+<span>아이디</span><input type = "text" id = "id" name = "id"><br>
+<span>비밀번호</span><input type = "password" id = "p1" name = "p1"><br>
+<span>비밀번를 다시 입력해주세요</span><input type = "password" id = "p2"><br>
+</fieldset>
+<fieldset>
+<legend>개인 정보</legend>
+<span>이름</span><input type = "text" id = "name"><br>
+<span>메일주소</span><input type ="email" placeholder = "aa@bb.cc" id = "mail"><br>
+<span>전화번호</span><input type = "tel" placeholder = "010-1234-5678" pattern = "[01]{3}-[0-9]{3,4}-[0-9]{3,4}" id = "phone"><br>
+</fieldset>
+<input type = "submit" value = "제출"><br>
+</form>
+<script>
+	function checkPW(){
+		
+		var pw1 = document.getElementById("p1").value;
+		var pw2 = document.getElementById("p2").value;
+		if(pw1==pw2){
+			
+			return true;
+		}
+		alert("비밀번호가 일치하지 않습니다.");
+		return false;
+	}
+</script>
+</body>
+</html>

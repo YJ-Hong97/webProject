@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>input tag의 여러가지 타입 살펴보기</h1>
+<form name = "myForm" action = "inputResult.jsp">
+1.<input name = "kosta1"><br>
+2.<input name = "kosta2" type = "text">텍스트<br>
+3.<input name = "kosta3" type = "password">패스워드<br>
+4.<input name = "kosta4" type = "search">서치<br>
+5.<input name = "kosta5" type = "submit">섭밋<br>
+6.<input name = "kosta6" type = "button" onclick = "f();" value= "버튼">버튼<br>
+7.<input name = "kosta7" type = "email" placeholder = "aa@bb.cc">이메일<br>
+8.<input name = "kosta8" type = "tel" placeholder = "000-2222-3333" pattern = "[01]{3}-[0-9]{4}-[0-9]{4}">전화<br>
+9.<input name = "kosta9" type = "url">url<br>
+14.<input name = "kosta10" type = "color"><br>
+15.<input name = "kosta11" type = "date"><br>
+16.<input name = "kosta12" type = "month" ><br>
+17.<input name = "kosta13" type = "submit"><br>
+18.<input name = "kosta14" type = "reset"><br>
+19.<input name = "kosta15" type = "image" src = "../images/facebook.png"><br>
+20.<input name = "kosta16" type = "button" value = "일반 버튼"><br>
+</form>
+
+<script type="text/javascript">
+	function f(){
+		alert("버튼을 눌렀다.");
+		myForm.action = "1.html";
+		myForm.submit();
+		
+	}
+</script>
+</body>
+</html>
